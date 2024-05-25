@@ -7,7 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #2c3e50;
+            color: white;
             margin: 0;
             padding: 0;
         }
@@ -30,7 +31,7 @@
             padding: 2em 0;
         }
         .product {
-            background: white;
+            background: #34495e;
             border: 1px solid #ddd;
             border-radius: 5px;
             padding: 1em;
@@ -74,6 +75,17 @@
         .contact a:hover {
             text-decoration: underline;
         }
+        .roblox-icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+        }
+        .roblox-icon img {
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -98,19 +110,23 @@
             <button onclick="payWithPix('dinheiro')">Comprar Dinheiro</button>
         </div>
         <div class="contact">
-            <p>Após a compra, você será redirecionado para o nosso <a href="https://discord.gg/tEFnRWNYQD" target="_blank">Discord</a>.</p>
+            <p>A compra será realizada após entrar no nosso <a href="https://discord.gg/seu-link-do-discord" target="_blank">Discord</a>.</p>
         </div>
     </div>
     <footer>
         <p>&copy; 2024 Loja Roleplay Roblox. Todos os direitos reservados.</p>
     </footer>
+    <a href="https://www.roblox.com" target="_blank" class="roblox-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Roblox_Logo_2022.svg" alt="Roblox">
+    </a>
     <script>
         function payWithPix(product) {
-            const pixKey = 'pgscosta2009@gmail.com';
-            const discordUrl = 'https://discord.gg/tEFnRWNYQD';
+            const pixKey = 'sua-chave-pix';
+            const discordUrl = 'https://discord.gg/seu-link-do-discord';
             alert('Para pagar por Pix, use a chave: ' + pixKey + '\nApós o pagamento, você será redirecionado para o nosso Discord.');
             window.location.href = discordUrl;
         }
     </script>
 </body>
 </html>
+
