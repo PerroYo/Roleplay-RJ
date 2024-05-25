@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleplay Roblox - Loja</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: url('https://example.com/imagem-rio-de-janeiro.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.5em;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+        .product {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1em;
+            margin-bottom: 1em;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product h2 {
+            margin-top: 0;
+        }
+        .product p {
+            font-size: 1.2em;
+        }
+        .product button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .product button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact {
+            margin-top: 1em;
+        }
+        .contact a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja Roleplay Roblox</h1>
+        <p>Bem-vindo à melhor loja de produtos do nosso roleplay!</p>
+    </header>
+    <div class="container">
+        <div class="product">
+            <h2>Vip</h2>
+            <p>Adquira o status VIP e aproveite benefícios exclusivos no nosso roleplay.</p>
+            <button onclick="payWithPix('vip')">Comprar VIP</button>
+        </div>
+        <div class="product">
+            <h2>Items</h2>
+            <p>Compre itens exclusivos para personalizar seu personagem e melhorar sua experiência.</p>
+            <button onclick="payWithPix('items')">Comprar Items</button>
+        </div>
+        <div class="product">
+            <h2>Dinheiro</h2>
+            <p>Obtenha dinheiro virtual para gastar no nosso roleplay e se destacar.</p>
+            <button onclick="payWithPix('dinheiro')">Comprar Dinheiro</button>
+        </div>
+        <div class="contact">
+            <p>Após a compra, você será redirecionado para o nosso <a href="https://discord.gg/seu-link-do-discord" target="_blank">Discord</a>.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Loja Roleplay Roblox. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        function payWithPix(product) {
+            const pixKey = 'sua-chave-pix';
+            const discordUrl = 'https://discord.gg/seu-link-do-discord';
+            alert('Para pagar por Pix, use a chave: ' + pixKey + '\nApós o pagamento, você será redirecionado para o nosso Discord.');
+            window.location.href = discordUrl;
+        }
+    </script>
+</body>
+</html>
